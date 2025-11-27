@@ -1,0 +1,65 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab" active="false" scrollx="19.999999999999886" scrolly="20.000000000000057" scale="0.9"></tab>
+  <tab name="New Tab" type="CommonTab" active="true" scrollx="23.200012207031364" scrolly="176.79998779296884" scale="0.9">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="b`[uY(tTD=inhX@MnN$n">videoCelular</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="+_+c%i|Tq/vM0=G]MURy" x="10" y="70">
+      <field name="VAR" id="b`[uY(tTD=inhX@MnN$n">videoCelular</field>
+      <value name="VALUE">
+        <block type="loadVideo" id="`N}p0NSne]F8Q3CB8;{(">
+          <value name="URL">
+            <shadow type="text" id="y_9},@cL?fO,!%AyFG63">
+              <field name="TEXT">https://raw.githack.com/hilstudios/vid/main/TestingCroma.mp4</field>
+            </shadow>
+          </value>
+        </block>
+      </value>
+      <next>
+        <block type="whenClicked" id="5]$U~Mj=Z(xpVvR7LmtU" inline="false">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false" useid="false"></mutation>
+          <field name="X_RAY">FALSE</field>
+          <field name="DOUBLE_CLICK">FALSE</field>
+          <field name="LEFT_BUTTON">TRUE</field>
+          <field name="MIDDLE_BUTTON">TRUE</field>
+          <field name="RIGHT_BUTTON">TRUE</field>
+          <value name="VALUE">
+            <shadow type="objectList" id=",mv,}p)%?lL8J];}i1V^">
+              <field name="FIELDNAME">Plane</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="replaceTexture" id="Z(^[|zcl!^R9xa:V]8j0">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="true" flextexinput="false" notexsharing="false"></mutation>
+              <field name="OLD_TEX_NAME">screenClick.jpg</field>
+              <value name="MATERIAL">
+                <shadow type="materialList" id="4Ng9%BjO.whr=|K|MQ6R">
+                  <field name="FIELDNAME">Material</field>
+                </shadow>
+              </value>
+              <value name="NEW_TEX_URL">
+                <shadow type="text" id="anU5va=_WDfF7uN6nrv.">
+                  <field name="TEXT">newTexture.png</field>
+                </shadow>
+                <block type="variables_get" id="lC~N~W^uNc[cnrQ*1l|c">
+                  <field name="VAR" id="b`[uY(tTD=inhX@MnN$n">videoCelular</field>
+                </block>
+              </value>
+              <statement name="DO">
+                <block type="playSound" id="]s.E1|dL0f9Rv6D?~9|E">
+                  <field name="LOOP">TRUE</field>
+                  <value name="VALUE">
+                    <block type="variables_get" id="Sx+4#JefY$%MeE9`@bLW">
+                      <field name="VAR" id="b`[uY(tTD=inhX@MnN$n">videoCelular</field>
+                    </block>
+                  </value>
+                </block>
+              </statement>
+            </block>
+          </statement>
+        </block>
+      </next>
+    </block>
+  </tab>
+  <editorsettings viewport-x="700.0000122070312" viewport-y="37" viewport-w="300" viewport-h="236.233" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

@@ -1,0 +1,190 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab" active="false" scrollx="19.999999999999886" scrolly="0" scale="0.9"></tab>
+  <tab name="New Tab" type="CommonTab" active="true" scrollx="-28.65895611023825" scrolly="97.43485313723522" scale="0.6091554258258186">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="WsIgg2R$qJBls2eN;B2*">click</variable>
+      <variable id="b`[uY(tTD=inhX@MnN$n">videoCelular</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenHovered" id="9^soA[9I3%5xq3B5S^{v" inline="false" x="50" y="-90">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="G)$Lx8xc/(f;h`XX]Z#w">
+          <field name="FIELDNAME">Plane</field>
+        </shadow>
+      </value>
+      <statement name="DO_OVER">
+        <block type="setHTMLElemStyle" id="Gq%h5LrB,tOFHh[);)?[">
+          <field name="PROPERTY">cursor</field>
+          <field name="PARENT">FALSE</field>
+          <value name="VALUE">
+            <shadow type="cursorDropdown" id="d1uc8=jv.Zw5wsVM|P8$">
+              <field name="TEXT">pointer</field>
+            </shadow>
+          </value>
+          <value name="ID">
+            <shadow type="text" id="HS4QfWq?T0%K)]QZ*S]^">
+              <field name="TEXT">myElem</field>
+            </shadow>
+            <block type="DOMObjectSelector" id="sY`M7LMqY)VWLw:TqpV+">
+              <field name="DOM_OBJECT">BODY</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="setHTMLElemStyle" id="WNZ@VV=.}H8We)xv?72/">
+          <field name="PROPERTY">cursor</field>
+          <field name="PARENT">FALSE</field>
+          <value name="VALUE">
+            <shadow type="cursorDropdown" id="OtCXM3Qg8Yd1eGuD^5jG">
+              <field name="TEXT">default</field>
+            </shadow>
+          </value>
+          <value name="ID">
+            <shadow type="text" id="HS4QfWq?T0%K)]QZ*S]^">
+              <field name="TEXT">myElem</field>
+            </shadow>
+            <block type="DOMObjectSelector" id="a^P=9x*WRqdNJ%=p@Gd-">
+              <field name="DOM_OBJECT">BODY</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="*e9tl=]e-)0B8c105X+r" x="50" y="70">
+      <field name="VAR" id="WsIgg2R$qJBls2eN;B2*">click</field>
+      <value name="VALUE">
+        <block type="text" id="|/B(4a154c[,OaamL{Dg">
+          <field name="TEXT">ON</field>
+        </block>
+      </value>
+      <next>
+        <block type="variables_set" id="+_+c%i|Tq/vM0=G]MURy">
+          <field name="VAR" id="b`[uY(tTD=inhX@MnN$n">videoCelular</field>
+          <value name="VALUE">
+            <block type="loadVideo" id="`N}p0NSne]F8Q3CB8;{(">
+              <value name="URL">
+                <shadow type="text" id="y_9},@cL?fO,!%AyFG63">
+                  <field name="TEXT">https://raw.githack.com/hilstudios/vid/main/TestingCroma.mp4</field>
+                </shadow>
+              </value>
+            </block>
+          </value>
+          <next>
+            <block type="whenClicked" id="5]$U~Mj=Z(xpVvR7LmtU" inline="false">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false" useid="false"></mutation>
+              <field name="X_RAY">FALSE</field>
+              <field name="DOUBLE_CLICK">FALSE</field>
+              <field name="LEFT_BUTTON">TRUE</field>
+              <field name="MIDDLE_BUTTON">TRUE</field>
+              <field name="RIGHT_BUTTON">TRUE</field>
+              <value name="VALUE">
+                <shadow type="objectList" id=",mv,}p)%?lL8J];}i1V^">
+                  <field name="FIELDNAME">Plane</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="controls_ifelse" id="ocfg%H3fTi@AlmT~eufq">
+                  <value name="IF0">
+                    <block type="logic_compare" id="|+]9j]eY!-cS)NA.j^4y">
+                      <field name="OP">EQ</field>
+                      <value name="A">
+                        <block type="variables_get" id="=d$]Um-!*09b#*(uu$5A">
+                          <field name="VAR" id="WsIgg2R$qJBls2eN;B2*">click</field>
+                        </block>
+                      </value>
+                      <value name="B">
+                        <block type="text" id="^WnOIr-)rbfZVeQ|54|O">
+                          <field name="TEXT">ON</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <statement name="DO0">
+                    <block type="replaceTexture" id="Z(^[|zcl!^R9xa:V]8j0">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="true" flextexinput="false" notexsharing="false"></mutation>
+                      <field name="OLD_TEX_NAME">screenClick.jpg</field>
+                      <value name="MATERIAL">
+                        <shadow type="materialList" id="4Ng9%BjO.whr=|K|MQ6R">
+                          <field name="FIELDNAME">Material</field>
+                        </shadow>
+                      </value>
+                      <value name="NEW_TEX_URL">
+                        <shadow type="text" id="anU5va=_WDfF7uN6nrv.">
+                          <field name="TEXT">newTexture.png</field>
+                        </shadow>
+                        <block type="variables_get" id="lC~N~W^uNc[cnrQ*1l|c">
+                          <field name="VAR" id="b`[uY(tTD=inhX@MnN$n">videoCelular</field>
+                        </block>
+                      </value>
+                      <statement name="DO">
+                        <block type="playSound" id="]s.E1|dL0f9Rv6D?~9|E">
+                          <field name="LOOP">TRUE</field>
+                          <value name="VALUE">
+                            <block type="variables_get" id="Sx+4#JefY$%MeE9`@bLW">
+                              <field name="VAR" id="b`[uY(tTD=inhX@MnN$n">videoCelular</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="variables_set" id="G%nNJ7fYtQ~q:z6;lE`1">
+                              <field name="VAR" id="WsIgg2R$qJBls2eN;B2*">click</field>
+                              <value name="VALUE">
+                                <block type="text" id="@J6_)W7HzLqg@C1_:vN3">
+                                  <field name="TEXT">OFF</field>
+                                </block>
+                              </value>
+                            </block>
+                          </next>
+                        </block>
+                      </statement>
+                    </block>
+                  </statement>
+                  <statement name="ELSE">
+                    <block type="replaceTexture" id=":n8Jhm^XbuU(TZVHoF,y">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="true" flextexinput="false" notexsharing="false"></mutation>
+                      <field name="OLD_TEX_NAME">screenClick.jpg</field>
+                      <value name="MATERIAL">
+                        <shadow type="materialList" id="F[2EVkOtw3.I)Pto88{1">
+                          <field name="FIELDNAME">Material</field>
+                        </shadow>
+                      </value>
+                      <value name="NEW_TEX_URL">
+                        <shadow type="text" id="anU5va=_WDfF7uN6nrv.">
+                          <field name="TEXT">newTexture.png</field>
+                        </shadow>
+                        <block type="variables_get" id="up}{jKC0YO[/,2fvy0_{">
+                          <field name="VAR" id="b`[uY(tTD=inhX@MnN$n">videoCelular</field>
+                        </block>
+                      </value>
+                      <statement name="DO">
+                        <block type="pauseSound" id="STV:LuM+~w1ylEBLRani">
+                          <value name="VALUE">
+                            <block type="variables_get" id="Gfr62_}XrY]{;lhd67WE">
+                              <field name="VAR" id="b`[uY(tTD=inhX@MnN$n">videoCelular</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="variables_set" id="7xkA7V(1;kxV{-)o8Dc=">
+                              <field name="VAR" id="WsIgg2R$qJBls2eN;B2*">click</field>
+                              <value name="VALUE">
+                                <block type="text" id="cz=|RkM,G6c2{x`B9z1M">
+                                  <field name="TEXT">ON</field>
+                                </block>
+                              </value>
+                            </block>
+                          </next>
+                        </block>
+                      </statement>
+                    </block>
+                  </statement>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+  </tab>
+  <editorsettings viewport-x="646.1333740234375" viewport-y="37" viewport-w="353.858" viewport-h="425.558" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
